@@ -129,7 +129,7 @@ class bitcredits {
     }
 
     // change order status to value selected by merchant
-   $db->Execute("update ". TABLE_ORDERS. " set orders_status = " . intval(MODULE_PAYMENT_BITCREDITS_UNPAID_STATUS_ID) . " where orders_id = ". intval($insert_id));
+   $db->Execute("update ". TABLE_ORDERS. " set orders_status = " . intval(MODULE_PAYMENT_BITCREDITS_UNPAID_STATUS_ID) . " where orders_id = ". intval($order_id));
 
     $endpoint = (preg_match('/^https?:\/\//', MODULE_PAYMENT_BITCREDITS_API_ENDPOINT) ? '' : 'https://' ). MODULE_PAYMENT_BITCREDITS_API_ENDPOINT;
     $method = '/v1/transactions';
