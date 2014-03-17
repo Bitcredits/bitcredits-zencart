@@ -75,7 +75,11 @@ class bitcredits {
     }
     window.BitCredits = window.BitCredits || [];
     window.BitCredits.push(['onConfigReady', function(){
-      window.BitCredits.push(['setupZenCart', <?php echo $order->info['total']; ?>]);
+      window.BitCredits.push(['setupZenCart', <?php echo $order->info['total']; ?>, <?php echo json_encode(array(
+            'email' => $order->customer['email_address'],
+            'firstname' => $order->customer['firstname'],
+            'lastname' => $order->customer['lastname']
+      )); ?>]);
     }]);
     //]]>
     </script>
