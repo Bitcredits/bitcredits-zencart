@@ -7,8 +7,8 @@ Bitcredits Zen Cart plugin
 Install - From Source
 =====================
 
-* Copy the "includes" folder in the root of your zencart installation.
-* Log in to your zencart admin
+* Copy the "includes" folder in the root of your Zen Cart installation.
+* Log in to your Zen Cart admin
 * Go to the "Modules" tab and click "Payment"
 * Click "Bitcoin via bitcredits.io"
 * To the right, click "Install"
