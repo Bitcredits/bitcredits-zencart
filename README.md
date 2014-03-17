@@ -14,5 +14,4 @@ Install - From Source
 * To the right, click "Install"
 * Enter your API Key
 * Click "Update"
-
 * Your shop is now bitcoin enabled
