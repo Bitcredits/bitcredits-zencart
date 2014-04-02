@@ -40,7 +40,7 @@ class bitcredits {
   }
 
   function javascript_validation() {
-    return false;
+    return true;
   }
 
   function selection() {
@@ -49,12 +49,12 @@ class bitcredits {
   }
 
   function pre_confirmation_check() {
-    return false;
+    return true;
   }
 
   // called upon requesting step 3
   function confirmation() {
-    return false;
+    return true;
   }
   
   // called upon requesting step 3 (after confirmation above)
@@ -143,7 +143,7 @@ class bitcredits {
             'email' => $order->customer['email_address'],
             'firstname' => $order->customer['firstname'],
             'lastname' => $order->customer['lastname'],
-            'order_id' => 'zc-'.intval($order_id)
+            'order_id' => $order_id
         )
     );
 
